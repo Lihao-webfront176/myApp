@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="static/logo.png">
+    <title>learn nodejs with me</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script type="text/javascript">
+  	let arr = [];
+  	function money() {
+  		let a = myRandom(10);
+  		arr.push(a);
+  		console.log(arr);
+  		check(20);
+  		console.log(arr);
+  		check(20);
+  		console.log(arr);
+  		check(20);
+  		console.log(arr);
+  		check(32);
+  		console.log(arr);
+  		check(32);
+  		console.log(arr);
+  		let b = myRandom(16);
+  		arr.push(b);
+  		console.log(arr);
+  	}
+  	function myRandom(num) {
+  		return Math.floor(Math.random() * num);
+  	}
+  	function check(num) {
+  		let b = myRandom(num);
+  		if (b > arr[arr.length - 1]) {
+  			arr.push(b);
+  		}else {
+  			check(num);
+  		}
+  	}
+  	money();
+  </script>
+</html>
