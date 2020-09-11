@@ -7,10 +7,6 @@ const login = () =>
 const userDetail = () =>
   import ('@/components/personCenter/userDetail/userDetail')
 
-// form vuex test
-const formTry = () =>
-  import ('@/components/personCenter/formTry/formTry')
-
 export default [{
   path: '/',
   name: 'index',
@@ -31,8 +27,4 @@ export default [{
   path: '/userDetail',
   name: 'userDetail',
   component: userDetail
-}, {
-  path: '/formTry',
-  name: 'formTry',
-  component: formTry
 }]
