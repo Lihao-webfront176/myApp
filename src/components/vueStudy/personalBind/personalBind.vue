@@ -26,7 +26,7 @@ export default {
 
   methods: {
 		showToast() {
-			Toast('我被点击了！！')
+			Toast('我被点击了！！--这是一次提交测试')
 		}
 	},
 
