@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import person from './person'
+import study from './study'
 Vue.use(Router)
 
-let routes = new Set([...person])
+let routes = new Set([...person, ...study])
 
-export default new Router({
+const router = new Router({
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
@@ -22,3 +23,9 @@ export default new Router({
   // mode: 'history',
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  next()
+})
+
+export default router
